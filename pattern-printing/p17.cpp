@@ -1,0 +1,27 @@
+/*print
+
+    A
+   AB
+  ABC
+ ABCD
+ABCDE
+
+*/
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+   for(int i=1;i<=5;i++){
+       for(int j=5;j>=i;j--){
+           cout<<" ";
+       }
+       char alpa= 'A'; 
+       for(int q=1;q<=i;q++){
+           cout<<alpa;
+           alpa++;
+       }
+       
+       cout<<endl;
+   }
+    return 0;
+}
